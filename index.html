@@ -3,17 +3,18 @@
 <head>
 	<title>weather</title>
 <link rel="stylesheet" type="text/css" href="style.css">
-<!--<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">-->
-<style>
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
-</style>
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 <body>
-
+	
 	<div class="container">
 		<div class="section">
 			<h1>Weather</h1>
-
+			
+			<div class="search">
+				<i class="fa fa-search"></i><input type="search" id="search" placeholder="search city.." />
+			</div>
+			
 			<p id="country"></p>
 			<span id="temp"></span><span> °C</span>
 
