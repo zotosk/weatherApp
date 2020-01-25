@@ -19,7 +19,7 @@ h1{
 	font-weight: 700;
 	border-radius: 4px;
 	padding: 10px;
-	font-size: 1.7rem !important;
+	font-size: 1.4rem !important;
 	color: #fff;
 }
 
@@ -56,7 +56,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 #search::placeholder {
 	opacity: 0.5;
-  }
+}
 
 #search:focus::placeholder{
 	opacity: 0;
@@ -76,7 +76,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .fa{
 	position: absolute;
 	z-index: 5;
-	top: 35px;
+	top: 32px;
 	right: 40px;
 	color: rgb(138, 138, 138, 0.3);
 

@@ -1,6 +1,4 @@
-//var obj = JSON.parse('fetch.json');
-
-var xmlhttp = new XMLHttpRequest();
+let xmlhttp = new XMLHttpRequest();
 xmlhttp.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
     
@@ -16,5 +14,22 @@ xmlhttp.onreadystatechange = function() {
   }
 };
 
-xmlhttp.open("GET", "http://api.openweathermap.org/data/2.5/weather?id=390903&appid=70aa60b7f4e2937586256465c83b3c57", true);
-xmlhttp.send();
+
+// let search = documnet.getElemenetById("search");
+
+// search.addEventListener("keydown", function (e) {
+//     if (e.keyCode === 13) {  //checks whether the pressed key is "Enter"
+// 		var getCity = document.getElementById("cityName").innerText;
+// 		xmlhttp.open("GET", "http://api.openweathermap.org/data/2.5/weather?q="+ getCity + "&appid=70aa60b7f4e2937586256465c83b3c57", true);
+// 		xmlhttp.send();
+//     }
+// });
+
+// xmlhttp.open("GET", "http://api.openweathermap.org/data/2.5/weather?q=London&appid=70aa60b7f4e2937586256465c83b3c57", true);
+		
+
+var getCity = document.getElementById("cityName").innerText;
+	xmlhttp.open("GET", "http://api.openweathermap.org/data/2.5/weather?q="+ getCity + "&appid=70aa60b7f4e2937586256465c83b3c57", true);
+	xmlhttp.send();
+
+console.log(getCity);

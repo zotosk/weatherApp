@@ -10,10 +10,21 @@
 	<div class="container">
 		<div class="section">
 			<h1>Weather</h1>
-			
+		
 			<div class="search">
-				<i class="fa fa-search"></i><input type="search" id="search" placeholder="search city.." />
+				<i class="fa fa-search"></i><input type="search" id="search" placeholder="search city.." onkeydown="cName()">
+				<span id="cityName" hidden>Alaska</span>
 			</div>
+			
+			<script>
+				function cName() {
+					var getCityName = document.getElementById("search").value;
+					document.getElementById("cityName").innerHTML = getCityName;
+					console.log(getCityName);
+				}
+				
+							
+			</script>
 			
 			<p id="country"></p>
 			<span id="temp"></span><span> °C</span>
