@@ -1,6 +1,6 @@
 # weatherApp
 
-Get Weather data from Weather API using JSON Parsing
+Get Weather data from Weather API using JSON Parsing-
 In progress..
 
 ![](images/imgWeather.JPG)
