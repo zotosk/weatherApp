@@ -10,20 +10,19 @@
 	<div class="container">
 		<div class="section">
 			<h1>Weather</h1>
-		
+						
 			<div class="search">
-				<i class="fa fa-search"></i><input type="search" id="search" placeholder="search city.." onkeydown="cName()">
-				<span id="cityName" hidden>Alaska</span>
+				<i class="fa fa-search"></i><input type="search" id="search" value="London" placeholder="search city.." onkeydown="readInput(this, event)"/>
 			</div>
 			
 			<script>
-				function cName() {
+				function readInput(el, e) {
+					if (e.keyCode == 13) {
 					var getCityName = document.getElementById("search").value;
-					document.getElementById("cityName").innerHTML = getCityName;
-					console.log(getCityName);
-				}
-				
-							
+						xmlhttp.open("GET", "http://api.openweathermap.org/data/2.5/weather?q="+ getCityName + "&appid=70aa60b7f4e2937586256465c83b3c57", true);
+						xmlhttp.send();
+					}
+				}					
 			</script>
 			
 			<p id="country"></p>
