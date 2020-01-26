@@ -73,10 +73,14 @@ input[type="search"]::-webkit-search-results-decoration{
 	color: rgb(110, 110, 110);
 }
 
-  .location-icon {
+.location-icon {
 	position: absolute;
 	font-size: 24px;
 	color: #ccc;
 	left: 18px;
 	bottom:34px;
-  }
+}
+
+#time{
+	font-size: 15px;
+}

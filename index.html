@@ -10,7 +10,7 @@
 		<div class="section">
 			<h1>Weather</h1>
 			<div class="search">
-				<input type="search" id="search" value="Greece,GR" placeholder="search city.." onkeydown="readInput(this, event)"/>
+				<input type="search" id="search" value="Amsterdam" placeholder="search city.." onkeydown="readInput(this, event)"/>
 				<i class="fa fa-map-marker location-icon"></i>
 			</div>			
 			<script>
@@ -28,6 +28,15 @@
 			<p id="clouds"></p>
 			<!-- <img src="Cloud-Sun.svg"> -->
 			<div id="showIcon"></div>
+			<div id="time"></div>
+			<script>
+				//local machine date
+				var date = new Date();
+				var tString = date.toDateString() ;
+				var time = date.toLocaleTimeString();
+				document.getElementById('time').innerHTML = tString + ' | ' + time;
+			</script>
+			
 		</div>
 	</div>
 <script src="http.js"></script>

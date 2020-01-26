@@ -15,7 +15,7 @@ xmlhttp.onreadystatechange = function() {
 
 //var getCity = document.getElementById("cityName").innerText;
 	//xmlhttp.open("GET", "http://api.openweathermap.org/data/2.5/weather?q="+ getCity + "&appid=70aa60b7f4e2937586256465c83b3c57", true);
-	xmlhttp.open("GET", "http://api.openweathermap.org/data/2.5/weather?q=Greece,GR&appid=70aa60b7f4e2937586256465c83b3c57", true);
+	xmlhttp.open("GET", "http://api.openweathermap.org/data/2.5/weather?q=Amsterdam&appid=70aa60b7f4e2937586256465c83b3c57", true);
 	xmlhttp.send();
 
 // console.log(getCity);
