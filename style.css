@@ -49,12 +49,12 @@ h1{
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button,
-input[type="search"]::-webkit-search-results-decoration {
+input[type="search"]::-webkit-search-results-decoration{
   -webkit-appearance:none;
 
 }
 
-#search::placeholder {
+#search::placeholder{
 	opacity: 0.5;
 }
 
@@ -63,7 +63,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 #search{
-	padding: 20px 20px 20px 30px;
+	padding: 20px 55px 20px 55px;
 	font-size: 1.1em;
 	margin: 10px 0 ;
 	width: 100%;
@@ -73,11 +73,10 @@ input[type="search"]::-webkit-search-results-decoration {
 	color: rgb(110, 110, 110);
 }
 
-.fa{
+  .location-icon {
 	position: absolute;
-	z-index: 5;
-	top: 32px;
-	right: 40px;
-	color: rgb(138, 138, 138, 0.3);
-
-}
+	font-size: 24px;
+	color: #ccc;
+	left: 18px;
+	bottom:34px;
+  }

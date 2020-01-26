@@ -6,15 +6,13 @@
 <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 <body>
-	
 	<div class="container">
 		<div class="section">
 			<h1>Weather</h1>
-						
 			<div class="search">
-				<i class="fa fa-search"></i><input type="search" id="search" value="London" placeholder="search city.." onkeydown="readInput(this, event)"/>
-			</div>
-			
+				<input type="search" id="search" value="Greece,GR" placeholder="search city.." onkeydown="readInput(this, event)"/>
+				<i class="fa fa-map-marker location-icon"></i>
+			</div>			
 			<script>
 				function readInput(el, e) {
 					if (e.keyCode == 13) {
@@ -23,20 +21,16 @@
 						xmlhttp.send();
 					}
 				}					
-			</script>
-			
+			</script>			
 			<p id="country"></p>
 			<span id="temp"></span><span> °C</span>
 
 			<p id="clouds"></p>
 			<!-- <img src="Cloud-Sun.svg"> -->
 			<div id="showIcon"></div>
-
 		</div>
 	</div>
-
 <script src="http.js"></script>
 <script src="weather_icon.js"></script>
-
 </body>
 </html>
